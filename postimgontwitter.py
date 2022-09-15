@@ -13,7 +13,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_KEY_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
-tweet = "Say hi to Dr Gigachad"
-image="H:\Memes Persona\Dr. Chad.jpg"
+tweet = "text to tweet"
+image="image location - file path"
 api.update_status_with_media(tweet, image)
 print ("Done!")

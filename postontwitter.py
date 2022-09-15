@@ -1,5 +1,3 @@
-#reference: https://techwiser.com/how-to-change-the-twitter-source-label/
-
 import os
 import tweepy
 from dotenv import load_dotenv
@@ -14,6 +12,6 @@ ACCESS_TOKEN_SECRET=os.getenv('ACCESS_TOKEN_SECRET')
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_KEY_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
-tweet = input("enter tweet:")
+tweet = "text to tweet"
 api.update_status(status =(tweet))
 print ("Done!")

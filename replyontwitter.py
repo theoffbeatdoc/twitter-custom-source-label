@@ -13,9 +13,9 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_KEY_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
-tweet = input("")
+tweet = "text to reply"
 api.update_status(tweet, in_reply_to_status_id = TWEET ID HERE)
 print ("Done!")
 
-#For example, in the below Twitter tweet URL, 1537326974519382017 is the tweet id.
-#https://twitter.com/ravitejaknts/status/1537326974519382017
+#For example, in the below Twitter tweet URL, 1570470417416204290 is the tweet id.
+#https://twitter.com/theoffbeatdoc/status/1570470417416204290
